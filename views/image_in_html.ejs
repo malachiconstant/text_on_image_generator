@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+      /* * {
+        box-sizing: border-box;
+      } */
+
+      #image_container {
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        max-width: 600px;
+        font-size: 0px;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div id="image_container">
+      <img id="image01" />
+    </div>
+  </body>
+  <script>
+    const url = new URL(window.location.href);
+    const puppetutm = url.search.slice(1);
+    if(url.search.length > 0){
+      document.getElementById('image01').src = `http://localhost:8080/puppeteer/${puppetutm}`;
+    } else {
+      document.getElementById('image01').src = "http://localhost:8080/puppeteer/cont01=placeholder01&cont02=placeholder02";
+    }
+  </script>
+</html>
+
+
+
+

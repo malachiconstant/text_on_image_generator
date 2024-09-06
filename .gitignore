@@ -1,0 +1,3 @@
+node_modules/
+/package-lock.json
+/views/images/personalized_images/new/*

@@ -1,0 +1,19 @@
+{
+  "name": "basic_site",
+  "version": "0.1.0",
+  "description": "personalization POC",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jon - GALE",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.10",
+    "puppeteer": "23.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
